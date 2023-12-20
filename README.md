@@ -1,7 +1,7 @@
 # Hello, World! Docker Action
 
-[![GitHub Super-Linter](https://github.com/actions/hello-world-docker-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
-![CI](https://github.com/actions/hello-world-docker-action/actions/workflows/ci.yml/badge.svg)
+[![GitHub Super-Linter](https://github.com/khalilou88/maven-resolver-redisson-action/actions/workflows/linter.yml/badge.svg)](https://github.com/super-linter/super-linter)
+![CI](https://github.com/khalilou88/maven-resolver-redisson-action/actions/workflows/ci.yml/badge.svg)
 
 This action prints `Hello, World!` or `Hello, <who-to-greet>!` to the log. To
 learn how this action was built, see
@@ -47,17 +47,17 @@ jobs:
 
     steps:
       # Change @main to a specific commit SHA or version tag, e.g.:
-      # actions/hello-world-docker-action@e76147da8e5c81eaf017dede5645551d4b94427b
-      # actions/hello-world-docker-action@v1.2.3
+      # khalilou88/maven-resolver-redisson-action@e76147da8e5c81eaf017dede5645551d4b94427b
+      # khalilou88/maven-resolver-redisson-action@v1.2.3
       - name: Print to Log
         id: print-to-log
-        uses: actions/hello-world-docker-action@main
+        uses: khalilou88/maven-resolver-redisson-action@main
         with:
           who-to-greet: ${{ inputs.who-to-greet }}
 ```
 
 For example workflow runs, check out the
-[Actions tab](https://github.com/actions/hello-world-docker-action/actions)!
+[Actions tab](https://github.com/khalilou88/maven-resolver-redisson-action/actions)!
 :rocket:
 
 ## Inputs
@@ -85,11 +85,11 @@ need to perform some initial setup steps before you can test your action.
 
 1. :hammer_and_wrench: Build the container
 
-   Make sure to replace `actions/hello-world-docker-action` with an appropriate
+   Make sure to replace `khalilou88/maven-resolver-redisson-action` with an appropriate
    label for your container.
 
    ```bash
-   docker build -t actions/hello-world-docker-action .
+   docker build -t khalilou88/maven-resolver-redisson-action .
    ```
 
 1. :white_check_mark: Test the container
@@ -97,7 +97,7 @@ need to perform some initial setup steps before you can test your action.
    You can pass individual environment variables using the `--env` or `-e` flag.
 
    ```bash
-   $ docker run --env INPUT_WHO_TO_GREET="Mona Lisa Octocat" actions/hello-world-docker-action
+   $ docker run --env INPUT_WHO_TO_GREET="Mona Lisa Octocat" khalilou88/maven-resolver-redisson-action
    ::notice file=entrypoint.sh,line=7::Hello, Mona Lisa Octocat!
    ```
 
@@ -106,6 +106,6 @@ need to perform some initial setup steps before you can test your action.
    ```bash
    $ echo "INPUT_WHO_TO_GREET=\"Mona Lisa Octocat\"" > ./.env.test
 
-   $ docker run --env-file ./.env.test actions/hello-world-docker-action
+   $ docker run --env-file ./.env.test khalilou88/maven-resolver-redisson-action
    ::notice file=entrypoint.sh,line=7::Hello, Mona Lisa Octocat!
    ```
